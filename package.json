@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "author": "houjd <946496545@qq.com>",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "command": "^0.0.5",
+    "commander": "7.1.0",
+    "ejs": "^3.1.6",
+    "execa": "^5.1.1",
+    "fs-extra": "^10.0.0",
+    "globby": "11.0.2",
+    "isbinaryfile": "^4.0.8",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}

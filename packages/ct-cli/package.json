@@ -1,0 +1,32 @@
+{
+  "name": "@ct/cli",
+  "version": "0.0.0",
+  "description": "ct-cli",
+  "keywords": [
+    "nodejs",
+    "cli"
+  ],
+  "bin": {
+    "ct-cli": "bin/index.js"
+  },
+  "author": "houjd <946496545@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com/"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^8.1.0"
+  }
+}
