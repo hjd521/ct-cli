@@ -18,7 +18,7 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "bin"
   ],
   "publishConfig": {
     "registry": "https://registry.yarnpkg.com/"

@@ -67,9 +67,9 @@ module.exports = class Creator extends EventEmitter{
     this.emit('creation', {event: 'deps-install'})
     await pm.install()
     if (shouldInitGit) {
-      await run('git add -A')
+      await this.run('git add -A')
       try {
-        await run('git', ['commit', '-m', 'init', '--no-verify'])
+        await this.run('git', ['commit', '-m', 'init', '--no-verify'])
       } catch (e) {
         console.log(e)
       }

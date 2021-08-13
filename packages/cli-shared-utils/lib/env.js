@@ -79,8 +79,8 @@ exports.hasProjectGit = (cwd) => {
 // 检测当前包是否应被发不了
 exports.hasNpmPkg = (name) => {
   try {
-    execSync('npm search', [`${name}`])
-    true
+    execSync(`npm search ${name}`, { stdio: 'ignore', cwd })
+    return true
   }catch(err) {
     return false
   }
